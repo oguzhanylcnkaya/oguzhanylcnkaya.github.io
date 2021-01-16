@@ -196,7 +196,7 @@ body{
     }
 
     #main .mail{
-        font-size: 1.2em;
+        font-size: 1.1em;
     }
 
     #main .yazi1{
@@ -637,4 +637,91 @@ EXPERİENCE
     letter-spacing: .5px;
     font-weight: 400;
     font-size: 24px;
+}
+
+/* ---------------------------------------
+    PARALLAX EFFECT
+-------------------------------------------*/
+
+#parallax{
+    height: 30vh;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("./tlor.jpg");
+    background-attachment: fixed;
+    position: relative;
+}
+
+.parallax-effect{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+/* ---------------------------------------
+    PROJECTS
+-------------------------------------------*/
+
+#projects{
+    height: 100%;
+    padding-top: 80px;
+    width: calc(100% -30px);
+    margin-left: 30px;
+}
+
+#projects .container-fluid{
+
+    justify-content: space-evenly;
+}
+
+#projects .container-fluid .card-element{
+    padding: 0 10px;
+    margin-bottom: 30px;
+}
+
+#projects .card-area{
+    overflow-y: scroll;
+    border: 1px solid #cfcfcf;
+    height: 200px;
+    margin-bottom: 1rem;
+    word-break: break-word;
+}
+
+#projects h5{
+    text-align: center;
+    padding: 5px 0;
+}
+
+#projects .card-button{
+    display: flex;
+    justify-content: center;
+}
+
+#projects .project-first-name{
+    color: #F4C613;
+    text-shadow: 0 0 10px #F4C613;
+    text-transform: uppercase;
+    font-family: "Raleway";
+    font-size: 70px;
+    font-weight: 200;
+    letter-spacing: 2px;
+}
+
+.btn-yellow{
+    background-color: #F4C613 !important;
+    border-color: #F4C613 !important;
+    color: #fff !important;
+    transition: all .5s !important;
+}
+
+.btn-yellow:hover{
+    background-color: #fff !important;
+    color: #F4C613 !important;
 }

@@ -3,10 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Oğuzhan Yalçınkaya'nın Kod Dünyası</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
+
+    <link rel="icon" href="oguzhanyalcinkaya.jpg">
+    <link rel="author" href="Oğuzhan Yalçınkaya">
+    <link rel="me" href="oguzhanyalcinkayaa@gmail.com">
+    <meta name="application-name" content="Oğuzhan Yalçınkaya'nın Kod Dünyası">
+    <meta name="decsription" content="Merhaba, ben Oğuzhan Yalçınkaya. Sakarya Üniversitesi YBS mezunuyum ve kariyerime Frontend Developer olarak devam ediyorum."> 
+    <meta name="robots" content="index,follow,noodp">
+    <meta name="googlebot" content="index,follow">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Oğuzhan Yalçınkaya'nın Kod Dünyası">
+    <meta property="og:image" content="./oguzhanresim.jpg">
+    <meta property="og:description" content="Merhaba, ben Oğuzhan Yalçınkaya. Sakarya Üniversitesi YBS mezunuyum ve kariyerime Frontend Developer olarak devam ediyorum.">
+    <meta property="og:site_name" content="Oğuzhan Yalçınkaya'nın Kod Dünyası">
+    <meta property="og:locale" content="tr_TR">
+    <meta property="article:author" content="Oğuzhan Yalçınkaya">
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:creator" content="Oğuzhan Yalçınkaya">
+    <meta name="twitter:title" content="Oğuzhan Yalçınkaya'nın Kod Dünyası">
+    <meta name="twitter:description" content="Merhaba, ben Oğuzhan Yalçınkaya. Sakarya Üniversitesi YBS mezunuyum ve kariyerime Frontend Developer olarak devam ediyorum.">
+    <meta name="twitter:image" content="./oguzhanresim.jpg">
 </head>
 <body lang="tr">
 
@@ -31,12 +53,13 @@
         <!-- <div onclick="ac()" id="ac" class="ac">&#9776;</div> -->
         <div onclick="kapat()" id="kapat" class="kapat">&#9747;</div>
         <div class="images">
-            <img src="oguzhanresim.jpg" width="200px" alt="">
+            <img src="oguzhanyalcinkaya.jpg" width="200px" height="200px" alt="">
         </div>
         <ul class="navbar-list">
             <li><a href="#main">Ana Sayfa</a></li>
             <li><a href="#ability">Hakkımda</a></li>
             <li><a href="#experience">Deneyimler</a></li>
+            <li><a href="#projects">Projeler</a></li>
         </ul>
         <ul id="social-icons" class="social-icons">
             <li><a href="https://twitter.com/oguzhanylcnkaya" target="_blank" class="fab fa-twitter"></a></li>
@@ -204,6 +227,70 @@
                 </div>
             </div>
         </div>
+    </div>
+
+    <div id="parallax">
+        <div class="parallax-effect"></div>
+    </div>
+
+    <div id="projects">
+        <div class="container-fluid">
+            <div class="row" style="padding-bottom: 50px;">
+                <div class="col-md-12">
+                    <h1 class="project-first-name">Projeler</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-12 card-element">
+                    <div class="card" style="width: 100%;">
+                        <img src="dotnetcoreProject.JPG" class="card-img-top" alt="Çalışan Takip Projesi">
+                        <div class="card-body">
+                            <h5 class="card-title">Çalışan Takip Projesi</h5>
+                            <div class="card-area">
+                                <p class="card-text">
+                                    Asp.Net Core teknolojisini kullanarak yaptığım bir proje. İçinde kayıt olma işlemi, giriş-çıkış işlemleri, roller ve claimler gibi işlemler var. Projeye facebook, google gibi harici yerlerden de kayıt olunabiliyor ve giriş yapılabiliyor. Kayıt olan birisinin veritabanın da emaili eğer varsa aynı email var hatası veriyor. Ve kayıt olan kullanıcı şifre oluştururken bir de onaylama şifresi girmesi gerekiyor. Uygulama şifrelerin aynı olup olmadığını kontrol ediyor ve aynı değilse hata mesajı veriyor. Kullanıcı kayıt olduktan sonra emailine, emailini onaylama linki gönderiyor. Emailini onaylama işlemini yapmadan giriş yapamıyor. Emailini onayladıktan sonra giriş yapmayı başarıyla yapabilir. Giriş kısmında ise şifresini unutabilen kullanıcılar için bir şifre sıfırlama metni mevcut. Buna tıklayan kullanıcıların daha önce onayladıkları email adresine token vasıtasıyla şifre sıfırlama linki gönderiliyor. Ve o linke tıklayan kullanıcıyı yeni şifre belirleme ekranına yönlendiriyor. Kullanıcı buradan yeni şifresini ve onaylama şifresini yazarak yeni şifre oluşturabiliyor. Aynı zamanda sisteme giren kullanıcıların şifresini değiştirebileceği bir sayfa da var. Ancak şifre sıfırlamadan farklı olarak bu sayfa da eski şifresini de girmesi gerekiyor. Projenin ana sayfasında çalışanları gösteren bir liste var. Roller kısmında listeyi herkesin görebileceği allow anonymous olarak ayarladım. Ancak çalışanların detaylarını görmek isteyen birisinin sisteme girmesi gerekiyor. Eğer sisteme girmeyen bir kullanıcı bu butona tıklarsa login sayfasına yönlendiriyor. Çalışan ekleme veya var olan bir çalışanın bilgilerini düzenleme yada silme işlemlerini rolü user olan yetkililer yapabilmekte. Sisteme girmiş ve user yetkisi olmayan birisi bu işlemleri yapmaya çalışınca hata sayfası gözükür. User rolü dışında bir de admin rolü mevcut. Admin rolü de aslında yeni rol ekleme, silme veya daha önceki olan rollere yeni kişiler verme yada yetkisi olan birisinin rolünü kaldırma gibi işlemleri yapabiliyor.
+                                </p>
+                            </div>
+                            <div class="card-button">
+                                <a href="https://github.com/oguzhanylcnkaya/DenemeIdentity" target="_blank" class="btn btn-yellow">Github Reposuna Git</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 card-element">
+                    <div class="card" style="width: 100%;">
+                        <img src="dotnetcoreProject.JPG" class="card-img-top" alt="Stok Takip Projesi">
+                        <div class="card-body">
+                            <h5 class="card-title">Stok Takip Projesi</h5>
+                            <div class="card-area">
+                                <p class="card-text">C# MVC teknolojisini öğrenmek için yaptığım ve geliştirdiğim bir projedir. Projede ilk olarak bir layout kısmı yer almaktadır. Bu kısımda Kategoriler, Ürünler, Müşteriler, Satışlar ve Yardım kısmı yer almaktadır. Kategoriler kısmında yeni kategori ekleme, kategorileri listeleme, güncelleme ve silme butonu vardır. Ürünler ve Müşteriler kısmında da ekleme, silme, düzenleme ve listeleme işlemleri yapılabilmektedir. Satışlar kısmında ise satış işlemini veri tabanımızdaki müşterilerden seçip, stok da olan ürünü seçip satış işlemini gerçekleştirebiliriz.
+                                </p>
+                            </div>
+                            <div class="card-button">
+                                <a href="https://github.com/oguzhanylcnkaya/MvcStok" target="_blank" class="btn btn-yellow">Github Reposuna Git</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 card-element">
+                    <div class="card" style="width: 100%;">
+                        <img src="dotnetcoreProject.JPG" class="card-img-top" alt="Yemek Sitesi">
+                        <div class="card-body">
+                            <h5 class="card-title">Yemek Sitesi</h5>
+                            <div class="card-area">
+                                <p class="card-text">Asp.Net öğrenmek için bir kurs da yaptığım projedir. Projede hem kullanıcılar için hem de admin tarafında gerekli düzenlemelerin yapılması için 2 farklı sayfa vardır. Kullanıcı kısmında bir master page kısmı var ve bu kısımda Ana Sayfa, Günün Yemeği, Tarif Öner, Hakkımızda ve İletişim bölümü mevcuttur. Bir de yan kısımda bir master page var ve bu kısımda da Kategoriler bölümü yer almakta. Kategori bölümünde yemek kategorilerine göre ayrılmakta ve yanında o kategoriden kaç adet yemek varsa o miktarda sayısı yazmakta. Ana Sayfa kısmında bütün yemekler alt alta sıralanmaktadır. Günün Yemeği bölümünde admin tarafında belirlenen günün yemeği yer almakta. Yemek Öner kısmında kullanıcıların yemek önerisinde bulunması sağlanmış ama girilen yemekler ilk olarak admin kısmına düşmekte ve o kısımda onaylanan yemekler Ana Sayfaya eklenmektedir. Hakkımızda kısmında bizimle ilgili bilgiler yer almaktadır. İletişim kısmında ise kullanıcıların bize yazmak istedikleri mesajları iletebileceği bir bölümdür. Ayrıca Ana Sayfada yemeklerin üstüne tıklayınca gerekli yemeğe ait yorum kısımları da bulunmaktadır ve bunlar ilk önce admin kısmında onaylanır. Admin tarafında ise Kategorileri düzenleme ve silme, Yemekleri onaylama, silme ve düzenleme, Yemeğe ait yapılan yorumları onaylama veya silme, Günün Yemeğini belirleme gibi kısımlar yer almaktadır.
+                                </p>
+                            </div>
+                            <div class="card-button">
+                                <a href="https://github.com/oguzhanylcnkaya/Yemek_Tarifleri" target="_blank" class="btn btn-yellow">Github Reposuna Git</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        
     </div>
 
     <script src="script.js"></script>
