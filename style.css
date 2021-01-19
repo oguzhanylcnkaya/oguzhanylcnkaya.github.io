@@ -90,6 +90,10 @@ body{
         width: 100% !important;
     }
 
+    #projects{
+        margin-left: 0 !important;
+    }
+
     .ac{
         left: 5px !important;
         top: -3px !important;
@@ -119,8 +123,9 @@ body{
     
     #main .name,
     #ability .aboutme h1,
-    #experience .experience-name{
-        font-size: 50px;
+    #experience .experience-name,
+    #projects .project-first-name{
+        font-size: 50px !important;
     }
 
     #main .mail{
@@ -153,8 +158,9 @@ body{
 @media (max-width: 767px){
     #main .name,
     #ability .aboutme h1,
-    #experience .experience-name{
-        font-size: 40px;
+    #experience .experience-name,
+    #projects .project-first-name{
+        font-size: 40px !important;
     }
 
     #main .mail{
@@ -191,8 +197,9 @@ body{
     }
     
     #ability .aboutme h1,
-    #experience .experience-name{
-        font-size: 30px;
+    #experience .experience-name,
+    #projects .project-first-name{
+        font-size: 30px !important;
     }
 
     #main .mail{
@@ -372,7 +379,7 @@ body{
 }
 
 .resim1{
-    background: url(raja-sen-8AibBzwWpV4-unsplash.jpg);
+    background: url(/images/raja-sen-8AibBzwWpV4-unsplash.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -465,6 +472,7 @@ body{
     font-size: 70px;
     font-weight: 200;
     letter-spacing: 2px;
+    text-shadow: 0 0 10px #F4C613;
 }
 
 .aboutme h6{
@@ -613,6 +621,7 @@ EXPERİENCE
     font-weight: 200;
     letter-spacing: 2px;
     margin-bottom: 50px;
+    text-shadow: 0 0 10px #0a0a0a;
 }
 
 #experience .work-name{
@@ -651,7 +660,7 @@ EXPERİENCE
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url("./tlor.jpg");
+    background-image: url("images/lotr.jpg");
     background-attachment: fixed;
     position: relative;
 }
