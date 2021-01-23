@@ -185,6 +185,11 @@ body{
         justify-content: flex-start !important;
         padding-bottom: 1.5rem!important;
     }
+
+    .progress:hover{
+        transform: scale(1) !important;
+        box-shadow: 0 0 10px rgb(0, 0, 0, 0.5);
+    }
 }
 
 @media (max-width: 575px){
@@ -387,6 +392,14 @@ body{
     height: 100%;
     width: 100%;
 }
+/* .carousel{
+    width: 100%;
+    height: 100%;
+}
+.carousel-inner{
+    height: 100%;
+    
+} */
 
 .overlay{
     position: absolute;
@@ -421,6 +434,12 @@ body{
     text-shadow: 0 0 10px #F4C613;
 }
 
+.name .surname2{
+    padding-left: 30px;
+    color: #ff99ff;
+    text-shadow: 0 0 10px #ff99ff;
+}
+
 .mail{
     position: relative;
     color: #fff;
@@ -432,8 +451,12 @@ body{
 
 .mail .mailadres{
     color: #F4C613;
-    text-shadow: 0 0 10px #F4C613;
-       
+    text-shadow: 0 0 10px #F4C613;    
+}
+
+.mail .mailadres2{
+    color: #ff99ff;
+    text-shadow: 0 0 10px #ff99ff;   
 }
 
 .yazi1{

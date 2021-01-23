@@ -29,6 +29,25 @@
     <meta name="twitter:title" content="Oğuzhan Yalçınkaya'nın Kod Dünyası">
     <meta name="twitter:description" content="Merhaba, ben Oğuzhan Yalçınkaya. Sakarya Üniversitesi YBS mezunuyum ve kariyerime Frontend Developer olarak devam ediyorum.">
     <meta name="twitter:image" content="images/oguzhanresim.jpg">
+
+    <style>
+        .carousel-item{
+            height: 100vh;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+
+        .container-ort{
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            padding-top: 200px;
+            padding-left: calc(30px + 0.75rem) ;
+        }
+    </style>
 </head>
 <body lang="tr">
 
@@ -72,7 +91,7 @@
     </div>
 
     <div id="main">
-        <div class="overlay"></div>
+        <!-- <div class="overlay"></div>
         <div class="resim1">
             <div class="container-fluid">
                 <div class="header-content">
@@ -88,7 +107,59 @@
                 </div>
                 
             </div>
-        </div>
+        </div> -->
+
+        <!-- Carousel -->
+        <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></li>
+              <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></li>
+            </ol>
+            <div class="carousel-inner">
+                
+                <!-- First Slide -->
+              <div class="carousel-item active" style="background-image: url(images/raja-sen-8AibBzwWpV4-unsplash.jpg);">
+                <div class="overlay"></div>
+                <div class="container-fluid container-ort">
+                    <div class="row">
+                        <h2 class="name">Oğuzhan <span class="surname"> Yalçınkaya</span></h2>
+                    </div>
+                    <div class="row mt-50">
+                        <h4 class="mail">MAİL: <span class="mailadres"> Oguzhanyalcinkaya@gmail.com</span></h4>
+                    </div>
+                    <div class="row mt-50">
+                        <p class="yazi1">Çaylak bir yazılımcıyım. Kendimi geliştiren, yeni şeyler öğrenmekten korkmayan, hayata pozitif bakmaya çalışan, boş vakitlerimde de gitar çalan birisiyim.</p>
+                    </div>
+                </div>
+                
+              </div>
+
+              <!-- Second Slide -->
+              <div class="carousel-item" style="background-image: url(images/slider2.jpg);">
+                <div class="overlay"></div>
+                <div class="container-fluid container-ort">
+                    <div class="row">
+                        <h2 class="name">Oğuzhan <span class="surname2"> Yalçınkaya</span></h2>
+                    </div>
+                    <div class="row mt-50">
+                        <h4 class="mail">MAİL: <span class="mailadres2"> Oguzhanyalcinkaya@gmail.com</span></h4>
+                    </div>
+                    <div class="row mt-50">
+                        <p class="yazi1">Çaylak bir yazılımcıyım. Kendimi geliştiren, yeni şeyler öğrenmekten korkmayan, hayata pozitif bakmaya çalışan, boş vakitlerimde de gitar çalan birisiyim.</p>
+                    </div>
+                </div>
+                
+              </div>
+            </div>
+            <!-- <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </a> -->
+          </div>
     </div>
 
     <div id="ability">
@@ -313,6 +384,24 @@
                         </div>
                     </div>
                 </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 card-element">
+                    <div class="card" style="width: 100%;">
+                        <a href="images/todolist.png"><img src="images/todolist.png" class="card-img-top" alt="Çalışan Takip Projesi"></a>
+                        
+                        <div class="card-body">
+                            <h5 class="card-title">To Do List</h5>
+                            <div class="card-area">
+                                <p class="card-text">
+                                    Vue.JS öğrenmeye başladığımda yaptığım ilk proje. Biraz basit olsa da öğrendiklerimi kavrama yolumda attığım her adımın önemli olduğunu düşünüyorum. Projenin tasarımları üzerine çok uğraşmadım ama daha sonra tasarımını güzelleştirmeyi düşünüyorum.
+                                    Projeyi tek bir component üzerinden olmak üzere yaptım. 
+                                </p>
+                            </div>
+                            <div class="card-button">
+                                <a href="https://github.com/oguzhanylcnkaya/ToDoList" target="_blank" class="btn btn-yellow">Github Reposuna Git</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
             
         </div>
@@ -320,5 +409,7 @@
     </div>
 
     <script src="script.js"></script>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
