@@ -13,11 +13,11 @@ body{
 
 @font-face{
     font-family: 'Raleway';
-    src: url(fonts/raleway/Raleway-VariableFont_wght.ttf);
+    src: url(../fonts/raleway/Raleway-VariableFont_wght.ttf);
 }
 @font-face{
     font-family: "Roboto-Mono";
-    src: url(fonts/roboto-mono/RobotoMono-VariableFont_wght.ttf);
+    src: url(../fonts/roboto-mono/RobotoMono-VariableFont_wght.ttf);
 }
 
 .scrollTop{
@@ -104,7 +104,12 @@ body{
         display: none !important;
     }
 
-    #main .header-content{
+    /* #main .header-content{
+        text-align: center;
+        padding-left: 0;
+    } */
+
+    #main .container-ort{
         text-align: center;
         padding-left: 0;
     }
@@ -163,6 +168,10 @@ body{
         font-size: 40px !important;
     }
 
+    #main{
+        height: 100% !important;
+    }
+
     #main .mail{
         font-size: 1.4em;
     }
@@ -194,10 +203,14 @@ body{
 
 @media (max-width: 575px){
 
-    #main .name{
-        font-size: 25px;
+    #main .container-ort{
+        padding-top: 125px;
     }
-    #main .surname{
+    #main .name{
+        font-size: 25px !important;
+    }
+    #main .surname,
+    #main .surname2{
         padding-left: 2px;
     }
     
@@ -683,7 +696,7 @@ EXPERİENCE
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url("images/lotr.jpg");
+    background-image: url("../images/lotr.jpg");
     background-attachment: fixed;
     position: relative;
 }
