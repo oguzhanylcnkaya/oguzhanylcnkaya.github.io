@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/lightbox.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <link rel="icon" href="images/oguzhanyalcinkaya.jpg">
     <link rel="author" href="Oğuzhan Yalçınkaya">
@@ -46,7 +47,6 @@
             left: 0;
             right: 0;
             padding-top: 200px;
-            padding-left: calc(30px + 0.75rem) ;
         }
     </style>
 </head>
@@ -151,6 +151,7 @@
                 </div>
                 
               </div>
+              
             </div>
             <!-- <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-bs-slide="prev">
               <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -281,7 +282,7 @@
     </div>
     
     <div id="experience">
-        <div class="container-fluid">
+        <div data-aos="zoom-in" data-aos-duration="2000" class="container-fluid">
             <div class="row">
                 <div class="col-md-12">
                     <h1 class="experience-name">Deneyimler</h1>
@@ -321,15 +322,88 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-4 col-md-6 col-sm-12 card-element">
-                    <div class="card" style="width: 100%;">
-                        <a href="images/dotnetcoreproject.png" data-lightbox="image-group" data-title="Çalışan Takip Projesi"><img src="images/dotnetcoreproject.png" class="card-img-top" alt="Çalışan Takip Projesi"></a>
-                        
+                <!-- <div class="col-lg-4 col-md-6 col-sm-12 card-element">
+                    <div class="card w-h-100">
+                        <div class="row mx-auto my-auto project-slider">
+                            <div id="carouselProject1" class="carousel slide" data-bs-ride="carousel" style="position: absolute;">
+                            <div class="carousel-inner">
+                              <div class="carousel-item active">
+                                <a href="images/dotnetcoreproject.png" data-lightbox="image-group-dotnetcore" data-title="Çalışan Takip Projesi">
+                                    <img src="images/dotnetcoreproject.png" class="card-img-top" alt="Çalışan Takip Projesi">
+                                </a>
+                              </div>
+                              <div class="carousel-item">
+                                <a href="images/dotnetcoreproject9.png" data-lightbox="image-group-dotnetcore" data-title="Çalışan Takip Projesi">
+                                    <img src="images/dotnetcoreproject9.png" class="card-img-top" alt="Çalışan Takip Projesi">
+                                </a>
+                              </div>
+                              <div class="carousel-item">
+                                <a href="images/dotnetcoreproject1.png" data-lightbox="image-group-dotnetcore" data-title="Çalışan Takip Projesi">
+                                    <img src="images/dotnetcoreproject1.png" class="card-img-top" alt="Çalışan Takip Projesi">
+                                </a>
+                              </div>
+                              <div class="carousel-item">
+                                <a href="images/dotnetcoreproject2.png" data-lightbox="image-group-dotnetcore" data-title="Çalışan Takip Projesi">
+                                    <img src="images/dotnetcoreproject2.png" class="card-img-top" alt="Çalışan Takip Projesi">
+                                </a>
+                              </div>
+                              <div class="carousel-item">
+                                <a href="images/dotnetcoreproject3.png" data-lightbox="image-group-dotnetcore" data-title="Çalışan Takip Projesi">
+                                    <img src="images/dotnetcoreproject3.png" class="card-img-top" alt="Çalışan Takip Projesi">
+                                </a>
+                              </div>
+                              <div class="carousel-item">
+                                <a href="images/dotnetcoreproject4.png" data-lightbox="image-group-dotnetcore" data-title="Çalışan Takip Projesi">
+                                    <img src="images/dotnetcoreproject4.png" class="card-img-top" alt="Çalışan Takip Projesi">
+                                </a>
+                              </div>
+                              <div class="carousel-item">
+                                <a href="images/dotnetcoreproject5.png" data-lightbox="image-group-dotnetcore" data-title="Çalışan Takip Projesi">
+                                    <img src="images/dotnetcoreproject5.png" class="card-img-top" alt="Çalışan Takip Projesi">
+                                </a>
+                              </div>
+                              <div class="carousel-item">
+                                <a href="images/dotnetcoreproject6.png" data-lightbox="image-group-dotnetcore" data-title="Çalışan Takip Projesi">
+                                    <img src="images/dotnetcoreproject6.png" class="card-img-top" alt="Çalışan Takip Projesi">
+                                </a>
+                              </div>
+                              <div class="carousel-item">
+                                <a href="images/dotnetcoreproject7.png" data-lightbox="image-group-dotnetcore" data-title="Çalışan Takip Projesi">
+                                    <img src="images/dotnetcoreproject7.png" class="card-img-top" alt="Çalışan Takip Projesi">
+                                </a>
+                              </div>
+                              <div class="carousel-item">
+                                <a href="images/dotnetcoreproject8.png" data-lightbox="image-group-dotnetcore" data-title="Çalışan Takip Projesi">
+                                    <img src="images/dotnetcoreproject8.png" class="card-img-top" alt="Çalışan Takip Projesi">
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                    
                         <div class="card-body">
                             <h5 class="card-title">Çalışan Takip Projesi</h5>
                             <div class="card-area">
                                 <p class="card-text">
                                     Asp.Net Core teknolojisini kullanarak yaptığım bir proje. İçinde kayıt olma işlemi, giriş-çıkış işlemleri, roller ve claimler gibi işlemler var. Projeye facebook, google gibi harici yerlerden de kayıt olunabiliyor ve giriş yapılabiliyor. Kayıt olan birisinin veritabanın da emaili eğer varsa aynı email var hatası veriyor. Ve kayıt olan kullanıcı şifre oluştururken bir de onaylama şifresi girmesi gerekiyor. Uygulama şifrelerin aynı olup olmadığını kontrol ediyor ve aynı değilse hata mesajı veriyor. Kullanıcı kayıt olduktan sonra emailine, emailini onaylama linki gönderiyor. Emailini onaylama işlemini yapmadan giriş yapamıyor. Emailini onayladıktan sonra giriş yapmayı başarıyla yapabilir. Giriş kısmında ise şifresini unutabilen kullanıcılar için bir şifre sıfırlama metni mevcut. Buna tıklayan kullanıcıların daha önce onayladıkları email adresine token vasıtasıyla şifre sıfırlama linki gönderiliyor. Ve o linke tıklayan kullanıcıyı yeni şifre belirleme ekranına yönlendiriyor. Kullanıcı buradan yeni şifresini ve onaylama şifresini yazarak yeni şifre oluşturabiliyor. Aynı zamanda sisteme giren kullanıcıların şifresini değiştirebileceği bir sayfa da var. Ancak şifre sıfırlamadan farklı olarak bu sayfa da eski şifresini de girmesi gerekiyor. Projenin ana sayfasında çalışanları gösteren bir liste var. Roller kısmında listeyi herkesin görebileceği allow anonymous olarak ayarladım. Ancak çalışanların detaylarını görmek isteyen birisinin sisteme girmesi gerekiyor. Eğer sisteme girmeyen bir kullanıcı bu butona tıklarsa login sayfasına yönlendiriyor. Çalışan ekleme veya var olan bir çalışanın bilgilerini düzenleme yada silme işlemlerini rolü user olan yetkililer yapabilmekte. Sisteme girmiş ve user yetkisi olmayan birisi bu işlemleri yapmaya çalışınca hata sayfası gözükür. User rolü dışında bir de admin rolü mevcut. Admin rolü de aslında yeni rol ekleme, silme veya daha önceki olan rollere yeni kişiler verme yada yetkisi olan birisinin rolünü kaldırma gibi işlemleri yapabiliyor.
+                                </p>
+                            </div>
+                            <div class="card-button">
+                                <a href="https://github.com/oguzhanylcnkaya/DenemeIdentity" target="_blank" class="btn btn-yellow">Github Reposuna Git</a>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+                <div class="col-lg-4 col-md-6 col-sm-12 card-element">
+                    <div class="card" style="width: 100%;">
+                        <a href="images/dotnetcoreproject.png" data-lightbox="image-group" data-title="Çalışan Takip Projesi">
+                            <img src="images/dotnetcoreproject.png" class="card-img-top" alt="Çalışan Takip Projesi">
+                        </a>
+
+                        <div class="card-body">
+                            <h5 class="card-title">Çalışan Takip Projesi</h5>
+                            <div class="card-area">
+                                <p class="card-text">Asp.Net Core teknolojisini kullanarak yaptığım bir proje. İçinde kayıt olma işlemi, giriş-çıkış işlemleri, roller ve claimler gibi işlemler var. Projeye facebook, google gibi harici yerlerden de kayıt olunabiliyor ve giriş yapılabiliyor. Kayıt olan birisinin veritabanın da emaili eğer varsa aynı email var hatası veriyor. Ve kayıt olan kullanıcı şifre oluştururken bir de onaylama şifresi girmesi gerekiyor. Uygulama şifrelerin aynı olup olmadığını kontrol ediyor ve aynı değilse hata mesajı veriyor. Kullanıcı kayıt olduktan sonra emailine, emailini onaylama linki gönderiyor. Emailini onaylama işlemini yapmadan giriş yapamıyor. Emailini onayladıktan sonra giriş yapmayı başarıyla yapabilir. Giriş kısmında ise şifresini unutabilen kullanıcılar için bir şifre sıfırlama metni mevcut. Buna tıklayan kullanıcıların daha önce onayladıkları email adresine token vasıtasıyla şifre sıfırlama linki gönderiliyor. Ve o linke tıklayan kullanıcıyı yeni şifre belirleme ekranına yönlendiriyor. Kullanıcı buradan yeni şifresini ve onaylama şifresini yazarak yeni şifre oluşturabiliyor. Aynı zamanda sisteme giren kullanıcıların şifresini değiştirebileceği bir sayfa da var. Ancak şifre sıfırlamadan farklı olarak bu sayfa da eski şifresini de girmesi gerekiyor. Projenin ana sayfasında çalışanları gösteren bir liste var. Roller kısmında listeyi herkesin görebileceği allow anonymous olarak ayarladım. Ancak çalışanların detaylarını görmek isteyen birisinin sisteme girmesi gerekiyor. Eğer sisteme girmeyen bir kullanıcı bu butona tıklarsa login sayfasına yönlendiriyor. Çalışan ekleme veya var olan bir çalışanın bilgilerini düzenleme yada silme işlemlerini rolü user olan yetkililer yapabilmekte. Sisteme girmiş ve user yetkisi olmayan birisi bu işlemleri yapmaya çalışınca hata sayfası gözükür. User rolü dışında bir de admin rolü mevcut. Admin rolü de aslında yeni rol ekleme, silme veya daha önceki olan rollere yeni kişiler verme yada yetkisi olan birisinin rolünü kaldırma gibi işlemleri yapabiliyor.
                                 </p>
                             </div>
                             <div class="card-button">
@@ -408,16 +482,62 @@
                         </div>
                     </div>
                 </div>
+
+                <!--ÖRNEK-->
+                 <!-- <div class="col-lg-4 col-md-6 col-sm-12 card-element"> 
+                    <div class="card w-h-100">
+                        <div class="row mx-auto my-auto project-slider">
+                            <div id="carouselProject1" class="carousel slide deneme-slide" data-bs-ride="carousel" style="position: absolute;">
+                            <div class="carousel-inner deneme-slide">
+                              <div class="carousel-item deneme-slide active">
+                                <a href="images/todolist.png" data-lightbox="image-group" data-title="To Do List">
+                                    <img src="images/todolist.png" class="card-img-top img-fluid" alt="Çalışan Takip Projesi">
+                                </a>
+                              </div>
+                              <div class="carousel-item deneme-slide">
+                                <a href="images/dotnetcoreproject.png" data-lightbox="image-group" data-title="Çalışan Takip Projesi">
+                                    <img src="images/dotnetcoreproject.png" class="card-img-top img-fluid" alt="Çalışan Takip Projesi"></a>
+                              </div>
+                              
+                            </div>
+                          </div>
+                        
+                        </div>
+                        
+                        <div class="card-body">
+                            <h5 class="card-title">To Do List</h5>
+                            <div class="card-area">
+                                <p class="card-text">
+                                    Vue.JS öğrenmeye başladığımda yaptığım ilk proje. Biraz basit olsa da öğrendiklerimi kavrama yolumda attığım her adımın önemli olduğunu düşünüyorum. Projenin tasarımları üzerine çok uğraşmadım ama daha sonra tasarımını güzelleştirmeyi düşünüyorum.
+                                    Projeyi tek bir component üzerinden olmak üzere yaptım. 
+                                </p>
+                            </div>
+                            <div class="card-button">
+                                <a href="https://github.com/oguzhanylcnkaya/ToDoList" target="_blank" class="btn btn-yellow">Github Reposuna Git</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>  -->
             </div>
             
         </div>
         
     </div>
 
+    <!-- Local JS -->
     <script src="js/script.js"></script>
+    
+    <!-- Lightbox JS -->
     <script src="js/lightbox-plus-jquery.min.js"></script>
     <script src="js/lightbox.min.js"></script>
-    <!-- JavaScript Bundle with Popper -->
+
+    <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 </html>

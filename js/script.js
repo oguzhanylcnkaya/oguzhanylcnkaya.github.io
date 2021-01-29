@@ -80,3 +80,23 @@ function ac(){
 function kapat(){
     document.getElementById("header").style.left = "-300px";
 }
+
+let spaceship = document.getElementById("spaceship");
+
+spaceship.addEventListener("mouseover", () =>{
+    document.addEventListener("mousemove", (e)=>{
+            var rocket = document.querySelector(".rocket");
+        
+            rocket.style.left = e.offsetX + 'px';
+            rocket.style.top = e.offsetY + 'px';
+    });
+});
+
+spaceship.addEventListener("mouseleave", () => {
+    document.addEventListener("mousemove", (e)=>{
+        var rocket = document.querySelector(".rocket");
+        
+            rocket.style.left = 50 + '%';
+            rocket.style.top = 50 + '%';
+    });
+});
