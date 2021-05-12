@@ -170,6 +170,11 @@ body{
 }
 
 @media (max-width: 767px){
+    
+    .carousel-min-device{
+        height: 20rem !important;
+    }
+
     #main .name,
     #ability .aboutme h1,
     #experience .experience-name,
@@ -212,6 +217,10 @@ body{
 
 @media (max-width: 575px){
 
+    .carousel-min-device{
+        height: 17rem !important;
+    }
+
     #main .container-ort{
         padding-top: 125px;
     }
@@ -247,6 +256,24 @@ body{
 
     .progress:hover .progress-bar{
         font-size: 14px !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .carousel-min-device{
+        height: 15rem !important;
+    }
+}
+
+@media (max-width: 400px) {
+    .carousel-min-device{
+        height: 12rem !important;
+    }
+}
+
+@media (max-width: 350px) {
+    .carousel-min-device{
+        height: 10rem !important;
     }
 }
 /* ----------------------------------------
