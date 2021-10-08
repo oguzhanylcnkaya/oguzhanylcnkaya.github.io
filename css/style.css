@@ -7,6 +7,10 @@
     box-sizing: border-box;
 }
 
+:root{
+    --bg-yellow : #F4C613;
+}
+
 body{
     font-family: "Roboto-Mono";
 }
@@ -861,4 +865,147 @@ EXPERİENCE
 .deneme-slide{
     width: 100%;
     height: 100%;
+}
+
+
+
+/* Footer */
+    
+.footer{
+    background: #282828;
+    color: #525659;
+    padding: 40px 0;
+}
+
+.footer-content{
+    text-align: justify;
+}
+
+.footer-title{
+    font-size: 50px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-title .footer-name{
+    color: var(--bg-yellow);
+    text-shadow: 0 0 10px #f4c613;
+}
+
+.footer-list ul{
+    padding: 0;
+}
+
+.footer-list h5{
+    color: #fff;
+    position: relative;
+}
+
+.footer-list h5::before{
+    content: '';
+    position: absolute;
+    width: 70px;
+    
+    bottom: -10px;
+    border-bottom: 4px solid #F4C613;
+    
+}
+
+.footer-list ul li{
+    list-style: none;
+
+}
+
+.footer-list ul li a{
+    text-decoration: none;
+}
+
+.footer-list .footer-pages{
+    margin-top: 50px;
+}   
+
+.footer-list .footer-pages li{
+    padding: 10px 0;
+}   
+
+.footer-list .footer-pages a{
+    color: white;
+    position: relative;
+}   
+
+.footer-list .footer-pages li:hover a{
+    color: #F4C613;
+    text-shadow: 0 0 6px #F4C613;
+}   
+
+.footer-list .footer-pages a::before{
+    content: "";
+    position: absolute;
+    width: 70px;
+    left: -150px;
+    bottom: -5px;
+    border-bottom: 4px solid #F4C613;
+    transition: all .3s ease-in-out;
+    opacity: 0;
+}
+
+.footer-list .footer-pages li:hover a::before{
+    left: 0;
+    opacity: 1;
+}
+
+.footer-list .footer-contact{
+    margin-top: 50px;
+}
+
+.footer-list .footer-contact li{
+    padding: 5px 0;
+    position: relative;
+    padding-left: 30px;
+
+}
+
+.footer-list .footer-contact i{
+    position: absolute;
+    left: 0;
+    top: 10px;
+}
+
+
+.footer-list .footer-contact li a{
+    color: white;
+}
+
+.copy-right{
+    background: #22324c;
+    color: white;
+}
+
+.copy-right-area{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+}
+
+.copy-right-list{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0;
+}
+
+.copy-right-list li{
+    list-style: none;
+    margin: 0 10px;
+}
+
+.copy-right-list li a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.pl-20px{
+    padding-left: 20px;
 }
