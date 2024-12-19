@@ -1,0 +1,1046 @@
+/* ----------------------------------------
+    GENERAL CSS
+-------------------------------------------*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --bg-yellow : #F4C613;
+}
+
+body{
+    font-family: "Roboto-Mono";
+}
+
+@font-face{
+    font-family: 'Raleway';
+    src: url(../fonts/raleway/Raleway-VariableFont_wght.ttf);
+}
+@font-face{
+    font-family: "Roboto-Mono";
+    src: url(../fonts/roboto-mono/RobotoMono-VariableFont_wght.ttf);
+}
+
+.scrollTop{
+    position: fixed;
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+    bottom: 1000px;
+    /* right: 30px; */
+    left: 40px;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 99999;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .5s;
+    cursor: pointer;
+    font-size: 60px;
+    overflow: hidden;
+}
+
+.scrollTop.active{
+    bottom: 30px;
+    opacity: 0.5;
+    visibility: visible;
+}
+
+.scrollTop.active:hover{
+    opacity: 1;
+}
+
+.scrollTop:hover span{
+    animation: updown 1s infinite ease-in-out;
+}
+
+::-webkit-scrollbar{
+    width: 20px;
+}
+::-webkit-scrollbar-track{
+    border-radius: 10px;  
+    box-shadow: inset 0 0 4px gray;
+}
+
+::-webkit-scrollbar-thumb{
+    border-radius: 10px;
+    background-color: #F4C613;
+    box-shadow: inset 0 0 2px #0a0a0a, inset 0 0 4px #0a0a0a;
+}
+
+@keyframes updown{
+    0%, 100%{
+        transform: translateY(10px);
+    }
+
+    50%{
+        transform: translateY(0);
+    }
+}
+
+.mt-50{
+    margin-top: 50px !important;
+}
+
+.w-h-100{
+    width: 100%;
+    height: 100%;
+}
+@media only screen and (min-width: 991px){
+    .container-ort{
+        padding-left: calc(30px + 0.75rem) !important;
+    }
+
+    .aboutme p{
+        font-size: 20px !important;
+    }
+}
+@media only screen and (max-width: 991px){
+
+    #navbar{
+        height: 30px !important;
+        width: 100% !important;
+    }
+
+    #projects{
+        margin-left: 0 !important;
+    }
+
+    .ac{
+        left: 5px !important;
+        top: -3px !important;
+    }
+
+
+    #navbar .social-icons{
+        display: none !important;
+    }
+
+    /* #main .header-content{
+        text-align: center;
+        padding-left: 0;
+    } */
+
+    #main .container-ort{
+        text-align: center;
+        padding-left: 0;
+    }
+
+    #ability .container-fluid .row{
+        padding-left: 0 !important;
+    }
+
+    .aboutme p{
+        font-size: 18px !important;
+    }
+
+    #spaceship{
+        margin-left: 0 !important;
+    }
+
+    #experience .container-fluid .row {
+        padding-left: 0 !important;
+    }
+    
+    #main .name,
+    #ability .aboutme h1,
+    #experience .experience-name,
+    #projects .project-first-name{
+        font-size: 50px !important;
+    }
+
+    #main .mail{
+        font-size: 1.7em;
+    }
+
+    #main .yazi1{
+        font-size: 1.4em;
+    }
+
+    #experience .work-name{
+        font-size: 33px !important;
+        padding-right: 0;
+    }
+
+    #experience .work-date{
+        font-size: 17px !important;
+    }
+
+    .progress-bar{
+        font-size: 14px !important;
+    }
+
+    .progress:hover .progress-bar{
+        font-size: 16px !important;
+    }
+
+}
+
+@media (max-width: 767px){
+    .footer-title .footer-name,
+    .footer-title{
+        font-size: 40px !important; 
+    }
+
+    .mt-40{
+        margin-top: 40px !important;
+    }
+
+    .pl-20px{
+        padding: 0 !important;
+    }
+    
+    .carousel-min-device{
+        height: 20rem !important;
+    }
+
+    #main .name,
+    #ability .aboutme h1,
+    #experience .experience-name,
+    #projects .project-first-name{
+        font-size: 40px !important;
+    }
+
+    #main{
+        height: 100% !important;
+    }
+
+    #main .mail{
+        font-size: 1.4em;
+    }
+
+    #main .yazi1{
+        font-size: 1.2em;
+    }
+
+    #ability{
+        height: 100% !important;
+        margin-bottom: 20px !important;
+    }
+
+    .aboutme p{
+        font-size: 16px !important;
+    }
+    
+    #experience{
+        height: 100% !important;
+        padding-bottom: 20px !important;
+    }
+
+    #experience .work-date{
+        justify-content: flex-start !important;
+        padding-bottom: 1.5rem!important;
+    }
+
+    .progress:hover{
+        transform: scale(1) !important;
+        box-shadow: 0 0 10px rgb(0, 0, 0, 0.5);
+    }
+}
+
+@media (max-width: 575px){
+
+    .copy-right-area .terms-rigth{
+        display: none !important;
+    }
+
+    .copy-right-area{
+        justify-content: center !important;
+    }
+
+    .carousel-min-device{
+        height: 17rem !important;
+    }
+
+    #main .container-ort{
+        padding-top: 125px;
+    }
+    #main .name{
+        font-size: 25px !important;
+    }
+    #main .surname,
+    #main .surname2{
+        padding-left: 2px;
+    }
+    
+    #ability .aboutme h1,
+    #experience .experience-name,
+    #projects .project-first-name{
+        font-size: 30px !important;
+    }
+
+    #main .mail{
+        font-size: 1.1em;
+    }
+
+    #main .yazi1{
+        font-size: 1em;
+    }
+
+    #experience .work-name{
+        font-size: 28px !important;
+    }
+
+    .progress-bar{
+        font-size: 12px !important;
+    }
+
+    .progress:hover .progress-bar{
+        font-size: 14px !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .carousel-min-device{
+        height: 15rem !important;
+    }
+}
+
+@media (max-width: 400px) {
+    .carousel-min-device{
+        height: 12rem !important;
+    }
+}
+
+@media (max-width: 350px) {
+    .carousel-min-device{
+        height: 10rem !important;
+    }
+}
+/* ----------------------------------------
+    HEADER
+-------------------------------------------*/
+
+.ac{
+    font-size: 24px;
+    color:  #F4C613;
+    cursor: pointer;
+    text-shadow: 0 0 2px  #F4C613;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+}
+
+.kapat{
+    font-size: 24px;
+    color:  #F4C613;
+    cursor: pointer;
+    text-shadow: 0 0 2px  #F4C613;
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    /* display: none; */
+}
+
+#header{
+    position: fixed;
+    top: 0;
+    /* left: -270px; */
+    left: -300px;
+
+    width: 300px;
+    height: 100%;
+    background-color: #fff;
+    z-index: 999;
+    transition: all .5s ease-in-out;
+}
+
+#header .images{
+    position: relative;
+    top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+#header .images img{
+    border-radius: 100%;
+    border: 4px solid #F4C613;
+}
+
+#header .navbar-list{
+    list-style-type: none;
+    margin-top: 100px ;
+    width: 100%;
+}
+
+#header .navbar-list li{
+    margin: 0;
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+}
+
+#header .navbar-list li a{
+    text-decoration: none;
+    color: #0a0a0a;
+    position: relative;
+}
+
+#header .navbar-list li:hover a{
+    color: #F4C613;
+    text-shadow: 0 0 6px #F4C613;
+}
+
+#header .navbar-list li a::before{
+    content: "";
+    position: absolute;
+    width: 70px;
+    left: -150px;
+    bottom: -5px;
+    border-bottom: 4px solid #F4C613;
+    transition: all .3s ease-in-out;
+}
+
+#header .navbar-list li:hover a::before{
+    left: 0;
+}
+
+#header .social-icons{
+    list-style-type: none;
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    align-items: flex-end;
+    padding: 0 8px;
+    padding-left: 2rem;
+    
+}
+
+#header .social-icons li{
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+#header .social-icons li a{
+    text-decoration: none;
+    color: #0a0a0a;
+}
+
+#header .social-icons li:hover a{
+    color: #F4C613;
+    text-shadow: 0 0 4px #F4C613;
+}
+
+#navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 30px;
+    background-color: white;
+    z-index: 999;
+}
+
+#navbar .social-icons{
+    list-style-type: none;
+    height: 100%;
+    padding: 0 8px;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+#navbar .social-icons li{
+    text-decoration: none;
+    padding: 5px 0;
+}
+
+#navbar .social-icons li a{
+    text-decoration: none;
+    color: #0a0a0a;
+}
+
+#navbar .social-icons li:hover a{
+    color: #F4C613;
+    text-shadow: 0 0 4px #F4C613;
+}
+
+/* ----------------------------------------
+    HOME PAGE
+-------------------------------------------*/
+
+#main{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+}
+
+.resim1{
+    background: url(/images/raja-sen-8AibBzwWpV4-unsplash.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100%;
+    width: 100%;
+}
+/* .carousel{
+    width: 100%;
+    height: 100%;
+}
+.carousel-inner{
+    height: 100%;
+    
+} */
+
+.overlay{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: #000;
+    opacity: .6;
+}
+
+.header-content{
+    top: 200px;
+    position: relative;
+    width: 100%;
+    padding-left: 30px;
+}
+
+.name{
+    position: relative;
+    color: #fff;
+    font-family: "Raleway";
+    font-size: 70px;
+    font-weight: 200;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding-left: 30px;
+    
+}
+
+.name .surname{
+    padding-left: 30px;
+    color: #F4C613;
+    /* text-shadow: 0 0 10px #F4C613; */
+    animation: text-animation 5s linear infinite;
+}
+
+@keyframes text-animation{
+    0%, 18%, 20%, 50.1%, 60%, 65.1%,80%, 90.1%,92%{
+        color: #F4C613;
+        text-shadow: none;
+    }
+    18.1%, 20.1%,30%, 50%, 60.1%, 65%,80.1%, 90%,92.1%,100%{
+        color: #fff;
+        text-shadow: 0 0 10px #F4C613,
+        0 0 20px #F4C613,
+        0 0 40px #F4C613,
+        0 0 80px #F4C613,
+        0 0 160px #F4C613;
+    }
+}
+
+.name .surname2{
+    padding-left: 30px;
+    color: #ff99ff;
+    /* text-shadow: 0 0 10px #ff99ff; */
+    animation: text-animation2 5s linear infinite;
+}
+
+@keyframes text-animation2{
+    0%, 18%, 20%, 50.1%, 60%, 65.1%,80%, 90.1%,92%{
+        color: #ff99ff;
+        text-shadow: none;
+    }
+    18.1%, 20.1%,30%, 50%, 60.1%, 65%,80.1%, 90%,92.1%,100%{
+        color: #fff;
+        text-shadow: 0 0 10px #ff99ff,
+        0 0 20px #ff99ff,
+        0 0 40px #ff99ff,
+        0 0 80px #ff99ff,
+        0 0 160px #ff99ff;
+    }
+}
+
+.mail{
+    position: relative;
+    color: #fff;
+    font-family: "Raleway";
+    font-weight: 200;
+    letter-spacing: 2px;
+    font-size: 2em;
+}
+
+.mail .mailadres{
+    color: #F4C613;
+    text-shadow: 0 0 10px #F4C613;    
+}
+
+.mail .mailadres2{
+    color: #ff99ff;
+    text-shadow: 0 0 10px #ff99ff;   
+}
+
+.yazi1{
+    color: #fff;
+    font-size: 1.5em;
+    font-weight: 200;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    line-height: 1.9em;
+    font-family: "Roboto-Mono";
+}
+
+/* ----------------------------------------
+    ABİLİTY
+-------------------------------------------*/
+
+#ability{
+    min-height: 100vh;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding-top: 80px;
+}
+
+#ability .container-fluid .row{
+    padding-left: 30px;
+}
+
+.aboutme h1{
+    color: #F4C613;
+    text-transform: uppercase;
+    font-family: "Raleway";
+    font-size: 70px;
+    font-weight: 200;
+    letter-spacing: 2px;
+    text-shadow: 0 0 10px #F4C613;
+}
+
+.aboutme h6{
+    color: #F4C613;
+    text-transform: uppercase;
+    font-family: "Raleway";
+    font-size: 20px;
+    font-weight: 200;
+    letter-spacing: 2px;
+}
+
+
+.skillbar{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.skillbar .skill-name{
+    position: absolute;
+    left: 5px;
+}
+
+.skillbar .skill-percent{
+    position: absolute;
+    right: 5px;
+}
+
+.progress{
+    height: 1.5rem !important;
+    margin-bottom: 1rem;
+    transition: all .5s;
+}
+
+.progress-bar{
+    font-size: 15px;
+    text-transform: uppercase;
+    background-color: #F4C613 !important;
+    color: rgb(10, 10, 10) !important;
+    transition: all .5s;
+}
+
+.progress:hover{
+    transform: scale(1.1);
+}
+
+.progress:hover .progress-bar{
+    font-size: 17px;
+}
+
+
+/* ----------------------------------------
+    SPACE SHİP
+-------------------------------------------*/
+
+#spaceship{
+    margin-left: 30px;
+}
+
+
+.scene{
+    position: relative;
+    width: 100%;
+    height: 30vh;
+    background: #01070a;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.scene .rocket{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    animation: animate .2s ease infinite;
+    pointer-events: none;
+    transition: all .1s;
+    user-select: none;
+}
+
+@keyframes animate{
+    0%, 100%{ 
+        transform: translateY(-52px) translateX(-50%);
+    }
+    50%{
+        transform: translateY(-48px) translateX(-50%);
+    }
+}
+
+.scene .rocket::before{
+    content: "";
+    position: absolute;
+    bottom: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 10px;
+    height: 50px;
+    background: linear-gradient(#00d0ff, transparent);
+}
+
+.scene .rocket::after{
+    content: "";
+    position: absolute;
+    bottom: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 10px;
+    height: 50px;
+    background: linear-gradient(#00d0ff, transparent);
+    filter: blur(20px);
+}
+
+.scene:active .rocket::before,
+.scene:active .rocket::after{
+    background: linear-gradient(#ff12d7, transparent);
+    filter: blur(2px);
+    height: 75px;
+    bottom: -75px;
+}
+
+.scene i{
+    position: absolute;
+    top: -250px;
+    background: rgba(255,255,255,.5);
+    animation: animateStars linear infinite;
+}
+
+@keyframes animateStars{
+    0%{
+        transform: translateY(0);
+    }
+
+    100%{
+        transform: translateY(200vh);
+    }
+}
+
+/* ---------------------------------
+EXPERİENCE  
+------------------------------------*/
+
+#experience{
+    /* height: 100vh; */
+    min-height: 100vh;
+    background-color: #F4C613;
+    color: #0a0a0a;
+    margin: 0;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+#experience .container-fluid .row{
+    padding-left: 30px;
+}
+
+#experience h1{
+    font-family: "Raleway";
+    text-transform: uppercase;
+    font-size: 70px;
+    font-weight: 200;
+    letter-spacing: 2px;
+    margin-bottom: 50px;
+    text-shadow: 0 0 10px #0a0a0a;
+}
+
+#experience .work-name{
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 100;
+    font-size: 40px;
+}
+
+#experience .work-date{
+    letter-spacing: 1px;
+    font-weight: 100;
+    font-size: 20px;
+    color: #fff;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#experience .company-name{
+    text-transform: uppercase;
+    letter-spacing: .5px;
+    font-weight: 400;
+    font-size: 24px;
+}
+
+/* ---------------------------------------
+    PARALLAX EFFECT
+-------------------------------------------*/
+
+#parallax{
+    height: 30vh;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("../images/lotr.jpg");
+    background-attachment: fixed;
+    position: relative;
+}
+
+.parallax-effect{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+/* ---------------------------------------
+    PROJECTS
+-------------------------------------------*/
+
+#projects{
+    height: 100%;
+    padding-top: 80px;
+    width: calc(100% -30px);
+    margin-left: 30px;
+}
+
+#projects .container-fluid{
+
+    justify-content: space-evenly;
+}
+
+#projects .container-fluid .card-element{
+    padding: 0 10px;
+    margin-bottom: 30px;
+}
+
+#projects .card-area{
+    overflow-y: scroll;
+    border: 1px solid #cfcfcf;
+    height: 200px;
+    margin-bottom: 1rem;
+    word-break: break-word;
+}
+
+#projects h5{
+    text-align: center;
+    padding: 5px 0;
+}
+
+#projects .card-button{
+    display: flex;
+    justify-content: center;
+}
+
+#projects .project-first-name{
+    color: #F4C613;
+    text-shadow: 0 0 10px #F4C613;
+    text-transform: uppercase;
+    font-family: "Raleway";
+    font-size: 70px;
+    font-weight: 200;
+    letter-spacing: 2px;
+}
+
+.btn-yellow{
+    background-color: #F4C613 !important;
+    border-color: #F4C613 !important;
+    color: #fff !important;
+    transition: all .5s !important;
+}
+
+.btn-yellow:hover{
+    background-color: #fff !important;
+    color: #F4C613 !important;
+}
+
+.project-slider{
+    width: 100%; 
+    height: 50%; 
+    position: relative;
+}
+
+.deneme-slide{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+/* Footer */
+    
+.footer{
+    background: #282828;
+    color: #525659;
+    padding: 40px 0;
+}
+
+.footer-content{
+    text-align: justify;
+}
+
+.footer-title{
+    font-size: 50px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-title .footer-name{
+    color: var(--bg-yellow);
+    text-shadow: 0 0 10px #f4c613;
+}
+
+.footer-list ul{
+    padding: 0;
+}
+
+.footer-list h5{
+    color: #fff;
+    position: relative;
+}
+
+.footer-list h5::before{
+    content: '';
+    position: absolute;
+    width: 70px;
+    
+    bottom: -10px;
+    border-bottom: 4px solid #F4C613;
+    
+}
+
+.footer-list ul li{
+    list-style: none;
+
+}
+
+.footer-list ul li a{
+    text-decoration: none;
+}
+
+.footer-list .footer-pages{
+    margin-top: 50px;
+}   
+
+.footer-list .footer-pages li{
+    padding: 10px 0;
+}   
+
+.footer-list .footer-pages a{
+    color: white;
+    position: relative;
+}   
+
+.footer-list .footer-pages li:hover a{
+    color: #F4C613;
+    text-shadow: 0 0 6px #F4C613;
+}   
+
+.footer-list .footer-pages a::before{
+    content: "";
+    position: absolute;
+    width: 70px;
+    left: -150px;
+    bottom: -5px;
+    border-bottom: 4px solid #F4C613;
+    transition: all .3s ease-in-out;
+    opacity: 0;
+}
+
+.footer-list .footer-pages li:hover a::before{
+    left: 0;
+    opacity: 1;
+}
+
+.footer-list .footer-contact{
+    margin-top: 50px;
+}
+
+.footer-list .footer-contact li{
+    padding: 5px 0;
+    position: relative;
+    padding-left: 30px;
+
+}
+
+.footer-list .footer-contact i{
+    position: absolute;
+    left: 0;
+    top: 10px;
+}
+
+
+.footer-list .footer-contact li a{
+    color: white;
+}
+
+.copy-right{
+    background: #22324c;
+    color: white;
+}
+
+.copy-right-area{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+}
+
+.copy-right-list{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0;
+}
+
+.copy-right-list li{
+    list-style: none;
+    margin: 0 10px;
+}
+
+.copy-right-list li a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.pl-20px{
+    padding-left: 20px;
+}
